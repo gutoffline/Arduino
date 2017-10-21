@@ -20,32 +20,31 @@ void setup()
 
 void loop()
 {
+  ControlaVermelho();
+  ControlaVerde();
+  ControlaAmarelo();
+  ControlaVerde();
+  ControlaVermelho();
+}
+
+void ControlaVermelho(){
   //LedVermelho
   digitalWrite(LedVermelho, HIGH);
   delay(velocidade); 
   digitalWrite(LedVermelho, LOW);
-  
+}
+
+void ControlaVerde(){
   //LedVerde
   digitalWrite(LedVerde, HIGH);
   delay(velocidade); 
   digitalWrite(LedVerde, LOW);
-  
+}
+
+void ControlaAmarelo(){
   //LedAmarelo
   digitalWrite(LedAmarelo, HIGH);
   delay(velocidade); 
   digitalWrite(LedAmarelo, LOW);
   delay(velocidade); 
-  digitalWrite(LedAmarelo, HIGH);
-  delay(velocidade); 
-  digitalWrite(LedAmarelo, LOW);
-  
-  //LedVerde
-  digitalWrite(LedVerde, HIGH);
-  delay(velocidade); 
-  digitalWrite(LedVerde, LOW);
-  
-  //LedVermelho
-  digitalWrite(LedVermelho, HIGH);
-  delay(velocidade); 
-  digitalWrite(LedVermelho, LOW);
 }
